@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "conflict-network/common-traits": "*"
+        "conflict-network/common-contracts": "1.0.*",
+        "illuminate/database": "5.7.*"
     },
     "autoload": {
         "psr-4": {
