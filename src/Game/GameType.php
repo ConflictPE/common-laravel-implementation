@@ -22,22 +22,11 @@
 
 declare(strict_types=1);
 
-namespace ConflictNetwork\Common\Implementation\Laravel\Shared;
+namespace ConflictNetwork\Common\Implementation\Laravel\Game;
 
-use ConflictNetwork\Common\Contracts\Shared\SluggableId as ISluggableId;
-use ConflictNetwork\Common\Traits\Shared\SluggableId as SluggableIdTrait;
+use ConflictNetwork\Common\Contracts\Game\GameType as IGameType;
+use ConflictNetwork\Common\Implementation\Laravel\Shared\TypeHolder;
 
-abstract class SluggableId implements ISluggableId {
-	use SluggableIdTrait;
-
-	/**
-	 * Create a new sluggable id instance.
-	 *
-	 * @param string $hashId
-	 * @param int $internalId
-	 */
-	public function __construct(string $hashId, int $internalId = -1) {
-		$this->initialiseId($hashId, $internalId);
-	}
+class GameType extends TypeHolder implements IGameType {
 
 }
