@@ -28,9 +28,7 @@ use ConflictNetwork\Common\Contracts\Shared\SluggableId as ISluggableId;
 use ConflictNetwork\Common\Traits\Shared\SluggableId as SluggableIdTrait;
 
 abstract class SluggableId implements ISluggableId {
-	use SluggableIdTrait {
-		SluggableIdTrait::getBaseContract as getBaseSluggableContract; //prevent any collision with child classes
-	}
+	use SluggableIdTrait;
 
 	/**
 	 * Create a new sluggable id instance.
