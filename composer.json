@@ -10,6 +10,7 @@
     ],
     "require": {
         "conflict-network/common-contracts": "1.0.*",
+        "conflict-network/common-traits": "1.0.*",
         "illuminate/database": "5.7.*"
     },
     "autoload": {
